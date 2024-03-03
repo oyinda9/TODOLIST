@@ -1,0 +1,22 @@
+<img  src="images/check.png" alt="" id="check">${task.status ? "checked" : ""}>
+                    <label id="mylabel" ${
+                      task.status
+                        ? `style="text-decoration: line-through; color: white;"`
+                        : ""
+                    }>${task.name}  </label>
+
+
+
+                    document.getElementById("checkboxImage").addEventListener("click", function() {
+                      var img = document.getElementById("checkboxImage");
+                      if (img.src.endsWith("unchecked.png")) {
+                          img.src = "checked.png";
+                          img.alt = "Checked";
+                      } else {
+                          img.src = "unchecked.png";
+                          img.alt = "Unchecked";
+                      }
+                  });
+
+                  <img src="images/radio-button.png" ${task.status ? "unchecked" : ""}>
+                    // <img src ="images/check.png"id="checkbox"  ${task.status ? "checked" : ""}>

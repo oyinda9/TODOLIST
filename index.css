@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+
+ }
+ section{
+    display: grid;
+    place-items:center;
+ }
+ .todoOuterContainer{
+    width: 400px;
+    height: 800px;
+    background-color: rgb(6, 6, 70);
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    
+  }
+
+ .menu-profile{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    padding: 20px;
+  
+ }
+ .todoOuterContainer h2{
+    color: black;
+    padding-right: 90px;
+    font-size: 20px;
+    justify-content: center;
+ }
+ img{
+    width: 40px;
+    height: 30px;
+    color: blanchedalmond;
+ }
+#profile-picture{
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+   
+}
+.entireContainer{   
+    background-color: aliceblue;
+    width: 380px;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.todotask{
+    color: black;
+    margin: 16px;
+    border-bottom: 2px solid black;
+
+} 
+.todotask img{
+    width: 20px;
+    height: 20px;
+    
+}
+.todotask label{
+    padding: 30px;
+    font-size: 20px;
+}
+button{
+    float: right ;
+    background-color: grey;
+    height: 50px;
+    color: white;
+    height: 20px;
+   border-radius: 3px;
+   padding: 5px;
+ 
+
+}
+#addTASK{
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+    color: black;
+    width: 350px;
+    height: 40px;
+    margin-top: 50px;
+   
+    margin-right: 20px;
+}
+    

@@ -3,16 +3,12 @@ const taskList = [];
 
 const addButtonElement = document.getElementById("addTASK");
 const taskListElement = document.getElementById("Taskdiv");
-const taskDoneElement=document.getElementById("taskDone");
-const taskUndoneElement=document.getElementById("taskUndone");
-const todayDateElement=document.getElementById("mydate");
 
 addButtonElement.addEventListener("click", function () {
   const taskName = prompt("Enter your task: ");
   if (taskName) {
     const taskObject = {
       name: taskName,
-      time: new Date(),
       status: false,
     };
     taskList.push(taskObject);
